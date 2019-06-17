@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FDE954D922B73CCD00EE2F5B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE954D822B73CCD00EE2F5B /* main.swift */; };
+		FDE954E222B73CDC00EE2F5B /* GribDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE954DF22B73CDB00EE2F5B /* GribDecodable.swift */; };
+		FDE954E322B73CDC00EE2F5B /* GribDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE954E022B73CDC00EE2F5B /* GribDecodingError.swift */; };
+		FDE954E422B73CDC00EE2F5B /* GribDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE954E122B73CDC00EE2F5B /* GribDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		FDE954D522B73CCD00EE2F5B /* GribTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GribTools; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE954D822B73CCD00EE2F5B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FDE954DF22B73CDB00EE2F5B /* GribDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GribDecodable.swift; sourceTree = "<group>"; };
+		FDE954E022B73CDC00EE2F5B /* GribDecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GribDecodingError.swift; sourceTree = "<group>"; };
+		FDE954E122B73CDC00EE2F5B /* GribDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GribDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,19 @@
 			isa = PBXGroup;
 			children = (
 				FDE954D822B73CCD00EE2F5B /* main.swift */,
+				FDE954E522B73CEC00EE2F5B /* Decoder */,
 			);
 			path = GribTools;
+			sourceTree = "<group>";
+		};
+		FDE954E522B73CEC00EE2F5B /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				FDE954DF22B73CDB00EE2F5B /* GribDecodable.swift */,
+				FDE954E122B73CDC00EE2F5B /* GribDecoder.swift */,
+				FDE954E022B73CDC00EE2F5B /* GribDecodingError.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE954D922B73CCD00EE2F5B /* main.swift in Sources */,
+				FDE954E222B73CDC00EE2F5B /* GribDecodable.swift in Sources */,
+				FDE954E422B73CDC00EE2F5B /* GribDecoder.swift in Sources */,
+				FDE954E322B73CDC00EE2F5B /* GribDecodingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
